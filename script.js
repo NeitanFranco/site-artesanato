@@ -1,5 +1,5 @@
 let btnNext = document.querySelector('.next')
-let btnBack = document.querySelector('.Back')
+let btnBack = document.querySelector('.back')
 
 let container = document.querySelector('.container')
 let list = document.querySelector('.container .list')
@@ -18,8 +18,8 @@ function moveItensOnClick(type){
         container.classList.add('next')
 
     } else {
-        list.prepend(thumbItems[listItems.length -1])
-        thumb.prepend(thumbItems[thumbItems.length -1])
+        list.prepend(listItems[listItems.length -1])
+        thumb.prepend(thumbItems[listItems.length -1])
         container.classList.add('back')
     }
 

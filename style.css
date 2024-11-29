@@ -118,6 +118,7 @@ header a{
     width: 135px;
     height: 200px;
     position: relative;
+    z-index: 3;
 }
 
 .container .thumb .thumb-item img{
@@ -246,6 +247,7 @@ header a{
     bottom: 0;
     left: 0;
     animation: hideMainImage 0.5s linear 1 forwards ;
+    z-index: 2;
     
 }
 
@@ -256,124 +258,5 @@ header a{
         border-radius: 10px;
         left: 50%;
         bottom: 50px;
-    }
-}
-
-
-/* Estilos gerais permanecem os mesmos */
-
-@media (max-width: 1200px) {
-    /* Ajustes para tablets e desktops menores */
-    header {
-        width: 90%;
-        height: auto;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header a {
-        margin-right: 20px;
-        font-size: 14px;
-    }
-
-    .container .list .list-item .title {
-        font-size: 4em; /* Reduzindo tamanho do título */
-    }
-
-    .container .list .list-item .description {
-        font-size: 1.2em;
-    }
-
-    .container .thumb {
-        left: 20%;
-        gap: 10px; /* Diminuindo o espaçamento entre thumbs */
-    }
-}
-
-@media (max-width: 768px) {
-    /* Ajustes para celulares */
-    body {
-        font-size: 10px;
-    }
-
-    header {
-        height: auto;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    header a {
-        margin-right: 10px;
-        font-size: 12px;
-    }
-
-    .container {
-        margin-top: 0;
-    }
-
-    .container .list .list-item .content {
-        padding-right: 10%;
-        top: 10%;
-        width: 90%;
-    }
-
-    .container .list .list-item .title {
-        font-size: 3em; /* Reduzindo ainda mais o título */
-    }
-
-    .container .list .list-item .description {
-        font-size: 1em; /* Ajustando o texto descritivo */
-    }
-
-    .container .list .list-item .buttons button {
-        font-size: 10px; /* Reduzindo tamanho dos botões */
-    }
-
-    .container .thumb {
-        flex-direction: column; /* Organizando thumbs em coluna */
-        bottom: 20px;
-        left: 10%;
-        gap: 5px;
-    }
-
-    .container .thumb .thumb-item {
-        width: 100px;
-        height: 150px;
-    }
-
-    .container .arrows {
-        bottom: 100px;
-        left: 20px;
-    }
-
-    .container .arrows button {
-        font-size: 1em;
-        padding: 8px 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Ajustes para telas muito pequenas */
-    .container .list .list-item .content {
-        top: 5%;
-        padding-right: 5%;
-    }
-
-    .container .list .list-item .title {
-        font-size: 2em;
-    }
-
-    .container .list .list-item .description {
-        font-size: 0.8em;
-    }
-
-    .container .thumb .thumb-item {
-        width: 80px;
-        height: 120px;
-    }
-
-    .container .arrows button {
-        font-size: 0.8em;
-        padding: 6px 10px;
     }
 }
